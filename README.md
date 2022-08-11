@@ -26,13 +26,16 @@ The columns in the dataset are:
 
 ### Data Preprocessing
 
-* What variable(s) are considered the target(s) for your model?
+* What variable(s) are considered the target(s) for your model?<br/>
+
 The ['IS_SUCCESSFUL'] is considered the target variable. This variable indicates if the donated money has been used effectively, which indicates if it's worth donating to a certain organization.
 
-* What variable(s) are considered to be the features for your model?
+* What variable(s) are considered to be the features for your model?<br/>
+
 Variables such as ['STATUS'], ['ASK_AMT'], ['APPLICATION_TYPE'], ['INCOME_AMT'], ['STATUS'], ['SPECIAL_CONSIDERATIONS'] among others.
 
-* What variable(s) are neither targets nor features, and should be removed from the input data?
+* What variable(s) are neither targets nor features, and should be removed from the input data?<br/>
+
 Variables like ['EIN'] and ['NAME'] were dropped to carry out the analysis because it was considered they don't have much relevance to the model.
 
 ### Compiling, Training, and Evaluating the Model
@@ -69,10 +72,12 @@ Variables like ['EIN'] and ['NAME'] were dropped to carry out the analysis becau
 
 ![](resources/images/3.jpg)
 
-* Were you able to achieve the target model performance?
+* Were you able to achieve the target model performance?<br/>
+
 No, the accuracy desired was 75% and the best performance obtained in our model was 73%
 
-* What steps did you take to try and increase model performance?
+* What steps did you take to try and increase model performance?<br/>
+
 Columns like ['STATUS'] and ['SPECIAL_CONSIDERATIONS'] were dropped. <br/>
 For every model the epochs were stablished at 100, hidden layers were added, the number of neurons was added and the activation function was changed depending on the hidden layer.
 
